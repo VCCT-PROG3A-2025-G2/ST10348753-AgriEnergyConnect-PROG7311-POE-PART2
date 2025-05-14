@@ -1,0 +1,115 @@
+﻿/* Root font sizes for scaling */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Default focus ring */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    outline: none;
+}
+
+/* 🔒 Login / Register background */
+.login-background {
+    background: url('../images/bg-login.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Central form container */
+.login-form-container {
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧑‍🌾 Farmer Dashboard / Products background */
+.dashboard-background {
+    background: url('../images/bg-dashboard.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+/* 📦 Product List Page background */
+.products-background {
+    background: url('../images/bg-products.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+/* Flash alert spacing */
+.alert {
+    margin-top: 20px;
+}
+
+/* Table styling */
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+    .btn-primary:hover {
+        background-color: #157347;
+        border-color: #146c43;
+    }
+
+/* Nav styles */
+.navbar-brand,
+.nav-link {
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #d1e7dd;
+    }
+
+/* General section spacing */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}

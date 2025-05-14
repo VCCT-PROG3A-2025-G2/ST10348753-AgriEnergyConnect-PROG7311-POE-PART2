@@ -1,0 +1,55 @@
+﻿@model AgriEnergyConnect.Models.Product
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Add New Product";
+}
+
+<!-- 🌾 Header Section -->
+<div class="text-center py-5" style="background: url('/images/bg-products.jpg') no-repeat center center; background-size: cover; color: white;">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Add New Product</h1>
+        <p class="lead">Capture product information for your farm.</p>
+    </div>
+</div>
+
+<!-- 📦 Product Form Section -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <!-- 🏷 Product Name -->
+                        <div class="form-floating mb-3">
+                            <input asp-for="Name" class="form-control" placeholder="e.g. Tomatoes" />
+                            <label asp-for="Name">Product Name</label>
+                            <span asp-validation-for="Name" class="text-danger small"></span>
+                        </div>
+
+                        <!-- 🧩 Category -->
+                        <div class="form-floating mb-3">
+                            <input asp-for="Category" class="form-control" placeholder="e.g. Vegetables" />
+                            <label asp-for="Category">Category</label>
+                            <span asp-validation-for="Category" class="text-danger small"></span>
+                        </div>
+
+                        <!-- 📅 Production Date -->
+                        <div class="form-floating mb-3">
+                            <input asp-for="ProductionDate" class="form-control" type="date" />
+                            <label asp-for="ProductionDate">Production Date</label>
+                            <span asp-validation-for="ProductionDate" class="text-danger small"></span>
+                        </div>
+
+                        <!-- ✅ Submit -->
+                        <button type="submit" class="btn btn-success w-100">Save Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
