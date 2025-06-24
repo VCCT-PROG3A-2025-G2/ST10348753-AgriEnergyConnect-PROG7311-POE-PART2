@@ -2,13 +2,15 @@
 **Module:** PROG7311  
 **Student:** ZINEDEAN SAAIMAN  
 **Student No:** ST10348753  
-**Date:** 15 May 2025
+**Date:** 24 JUNE 2025
 
 ---
 
 ## Overview
 
-Agri-Energy Connect is a prototype web application developed in ASP.NET Core MVC for connecting South African farmers with sustainable, green energy solutions. The platform supports two roles: **Farmers** and **Employees**, allowing them to manage and view agricultural products and farmer profiles respectively.
+AgriEnergyConnect is a role-based web platform prototype developed using ASP.NET Core MVC and Entity Framework Core, designed to facilitate efficient tracking and management of farmers and their products by agricultural support staff (employees).
+
+This README provides a complete setup and usage guide to help developers, lecturers, and stakeholders build, run, and evaluate the system.
 
 ---
 
